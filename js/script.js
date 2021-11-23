@@ -5,6 +5,23 @@
 // Per i multipli di 3 stampi “Fizz” al posto del numero e per i multipli di 5 stampi Buzz.
 // Per i numeri che sono sia multipli di 3 che di 5 stampi FizzBuzz.
 
+for (let i = 1; i < 100; i++) {
+    switch (true) {
+        case (i % 3 == 0 && i % 5 == 0):
+            console.log('fizzbuzz');
+            break;
+        case (i % 3 == 0):
+            console.log('fizz');
+            break;
+        case (i % 5 == 0):
+            console.log('buzz');
+            break;
+        default:
+            console.log(i);
+            break;
+    }
+}
+
 //     MILESTONE 2
 // Dato un container nel DOM, appendi un elemento html con il numero o la stringa corretta.
 
